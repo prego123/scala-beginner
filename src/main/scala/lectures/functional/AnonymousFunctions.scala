@@ -40,8 +40,8 @@ object AnonymousFunctions extends App {
   Takeaways
 
   Instead of passing anonymous FunctionX instances every time
-  1) cumbersome
-  2) still object-oriented
+    1) cumbersome
+    2) still object-oriented
 
   (x, y) => x+y  --- lambda
 

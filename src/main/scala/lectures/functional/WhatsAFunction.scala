@@ -26,7 +26,7 @@ object WhatsAFunction extends App {
 
   // ALL SCALA FUNCTIONS ARE OBJECTS OR INSTANCES OF CLASSES DERIVING FROM FUNCTION1, FUNCTION2
 
-  // exercise
+  // Exercise
   // 1.
   def concatenator: (String, String) => String = new Function2[String, String, String] {
     override def apply(a: String, b: String): String = a + b
@@ -69,7 +69,6 @@ trait MyFunction[A, B] {
 */
 
 // higher order function ----- either receive functions as parameters or return other functions as a result
-
 
 /*
   Functions:

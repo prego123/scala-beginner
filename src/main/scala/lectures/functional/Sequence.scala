@@ -152,7 +152,7 @@ object Sequence extends App {
   // 2) disadvantage - if try to update an element in the middle of the list - not efficient
   println(getWriteTime(numbersList))
 
-  //  Vector needs to traverse the whole 32 branch tree and then replace that entire chunk
+  // Vector needs to traverse the whole 32 branch tree and then replace that entire chunk
   // advantage - depth of the tree is small
   // disadvantage - needs to replace entire 32 element chunk
   println(getWriteTime(numbersVector))
