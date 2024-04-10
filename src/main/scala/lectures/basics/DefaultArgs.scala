@@ -10,6 +10,6 @@ object DefaultArgs extends App {
 
    def savePictures(format: String = "jpg", width: Int = 1920, height: Int = 1080): Unit = println("Saving pictures")
 
-  savePictures(width=800)
+  savePictures(width = 800)
   savePictures(width = 34, format = "href")
 }

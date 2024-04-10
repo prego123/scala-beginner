@@ -27,13 +27,13 @@ object Recursion extends App {
 
   println(anotherFact(5000))
 
-  //when use loops - tail recursion
+  // when use loops - tail recursion
 
-  //1. Concatenates a string n times
-  //2. IsPrime func tail recur
-  //3. Fibonacci tail recur
+  // 1. Concatenates a string n times
+  // 2. IsPrime func tail recur
+  // 3. Fibonacci tail recur
 
-  //1.
+  // 1.
   def concatStrings(s: String, n: Int): String = {
     @tailrec
     def concat(result: String, n: Int): String =
@@ -45,7 +45,7 @@ object Recursion extends App {
   println(concatStrings("Hello", 4))
 
 
-  //2.
+  // 2.
   def isPrime(n: Int): Boolean = {
     @tailrec
     def isPrimeUtil(i: Int, check: Boolean): Boolean = {
@@ -60,7 +60,7 @@ object Recursion extends App {
   println(isPrime(7))
   println(isPrime(9))
 
-  //3.
+  // 3.
   def fibonacci(n: Int): Int = {
     @tailrec
     def fiboUtil(i: Int, prev: Int, next: Int): Int = {

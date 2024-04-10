@@ -5,7 +5,7 @@ object Functions extends App {
   def aFunc(a: String, b: Int) =
     a + " " + b
 
-  def bFunc(a: String, b:Int): String = {
+  def bFunc(a: String, b: Int): String = {
     a + " " + b
   }
 
@@ -35,18 +35,18 @@ object Functions extends App {
     smallFunc(n, n-1)
   }
 
-  //1. a greeting func (name, age): => "Hello name is Sam and age is 3 years
-  //2. Factorial func 1*2*3*....n
-  //3. Fibonacci func
-  //4. test is a funct is prime
+  // 1. a greeting func (name, age): => "Hello name is Sam and age is 3 years
+  // 2. Factorial func 1*2*3*....n
+  // 3. Fibonacci func
+  // 4. test is a funct is prime
 
 
-  //1.
+  // 1.
   def greeting(name: String, age: Int): String = "Hello, my name is " + name + ". My age is " + age
   println(greeting("Pragati", 25))
 
 
-  //2.
+  // 2.
   def factorial(n: Int): Int = {
     var i = 1
     var fact = 1
@@ -60,7 +60,7 @@ object Functions extends App {
 
   println(factorial(5))
 
-  //3.
+  // 3.
   def fibonacci(n: Int): Int = {
     if(n == 1) 1
     else if(n == 2) 1
@@ -69,7 +69,7 @@ object Functions extends App {
 
   println(fibonacci(5))
 
-  //4.
+  // 4.
   def isPrime(n: Int): Boolean = {
     def isPrimeUtil(t: Int): Boolean = {
       if(t<=1) true
@@ -80,6 +80,5 @@ object Functions extends App {
   }
 
   println(isPrime(9))
-
 }
 

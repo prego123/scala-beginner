@@ -11,8 +11,7 @@ object CallByNameVSCallByValue extends App {
     println("By value: " + x)
     println("By value: " + x)
   }
-
-  //=> by name
+  // => by name
 
   callByValue(System.nanoTime())
   callByName(System.nanoTime())
@@ -27,7 +26,7 @@ object CallByNameVSCallByValue extends App {
   //  By value: 375083390568265
   //  By value: 375083390611914
   //  values are executed everytime
-  //def callByName(x: => Long): Unit = {
+  // def callByName(x: => Long): Unit = {
   //    println("By value: " + System.nanoTime())
   //    println("By value: " + System.nanoTime())
   //  }
@@ -35,6 +34,6 @@ object CallByNameVSCallByValue extends App {
   def infinite(): Int = 1 + infinite()
   def printFirst(x: Int, y: => Int) = println(x)
 
-//  printFirst(infinite(), 34)
-  printFirst(34, infinite())
+ // printFirst(infinite(), 34) - first calculated then passed hence resulted in infinity
+  printFirst(34, infinite()) // calculated after passing to the parameter
 }

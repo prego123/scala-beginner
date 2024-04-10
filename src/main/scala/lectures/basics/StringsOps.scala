@@ -23,7 +23,7 @@ object StringsOps extends App {
   val greeting = s"Hello, my nae is $name and I am ${age+1} years old"
   println(greeting)
 
-  // F-interploation
+  // F-interpolation
   val speed = 1.2f
   val myth = f"$name can eat $speed%2.2f burger per minute"
   println(myth)
