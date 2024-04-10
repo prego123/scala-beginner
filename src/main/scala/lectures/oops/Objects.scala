@@ -40,38 +40,37 @@ object Objects {
     val kartik = new Person("Kartik")
     println(prego == kartik) // false
 
-    val bobbie = Person(prego, kartik)
+    val bobbie = Person(prego, kartik) // calls apply method in object
   }
 
   // Scala application = Scala objects with
   // def main(args: Array[String]): Unit
 
   // Scala app is turned into JVM app whose entry point have to be static public void main,
-
 }
 
 /*
-Takeways
+  Takeaways
 
-Scala doesnt have static values/methods
+    Scala doesnt have static values/methods
 
-Scala Objects
-- are in their own class
-- are the only instances
-- singleton pattern in one line
+    Scala Objects
+      - are in their own class
+      - are the only instances
+      - singleton pattern in one line
 
-ex -
-object Person {
-  val N_EYES = 2
-  def canFly: Boolean = false
-}
+    ex -
+    object Person {
+      val N_EYES = 2
+      def canFly: Boolean = false
+    }
 
-Scala Companions
- - can access each others private members
- - Scala is more OO than JAVA
+    Scala Companions
+      - can access each others private members
+      - Scala is more OO than JAVA
 
 
-Scala app
-- def main(args: Array[String]): Unit
-- object Person extends App
+    Scala app
+      - def main(args: Array[String]): Unit
+      - object Person extends App
 */

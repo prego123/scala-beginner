@@ -1,7 +1,7 @@
 //package lectures.oops
 //
 //object Enum {
-//  // created sealed data type that cannot be extended and th only possible these constants
+//  // created sealed data type that cannot be extended and the only possible these constants
 //  enum Permissions {
 //    case READ, WRITE, EXECUTE, NONE
 //

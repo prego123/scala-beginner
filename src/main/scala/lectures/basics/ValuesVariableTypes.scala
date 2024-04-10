@@ -24,5 +24,4 @@ object ValuesVariableTypes extends App {
   // prefer vals over vars
   // all vals and vars have types
   // compiler automatically infers types when omitted
-
 }

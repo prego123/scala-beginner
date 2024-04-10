@@ -52,8 +52,6 @@ object Exceptions extends App {
 
   // throw exception
 
-
-
   /*
     1. Crash your program with an OutOfMemoryError
     2. Crash with SOError

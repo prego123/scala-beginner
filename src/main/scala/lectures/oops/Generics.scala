@@ -72,24 +72,24 @@ object Generics extends App {
 /*
   Takeaways
 
--  Use the same code on many (potentially unrelated) types
-    trait List[T] {
-      def add(ele: T)
-    }
+    -  Use the same code on many (potentially unrelated) types
+        trait List[T] {
+          def add(ele: T)
+        }
 
 
--  Generics methods
-    object List {
-      def single[A](ele: T): List[A] = ???
-    }
+    -  Generics methods
+        object List {
+          def single[A](ele: T): List[A] = ???
+        }
 
-- Variance: if B extends A, should List[B] extend List[A]?
-  trait List[+A] - yes(Covariance)
-  trait List[A] - no(Invariance) - default
-  trait List[-A] - hell no (Contravariance)
+    - Variance: if B extends A, should List[B] extend List[A]?
+        trait List[+A] - yes(Covariance)
+        trait List[A] - no(Invariance) - default
+        trait List[-A] - hell no (Contravariance)
 
-- Bounded types
-  class Car
-  class SuperCar extends Car
-  class Garage[T <: Car](car: T)
+    - Bounded types
+        class Car
+        class SuperCar extends Car
+        class Garage[T <: Car](car: T)
 */

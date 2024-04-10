@@ -44,26 +44,26 @@ object PackagingAndImports {
 /*
   Takeaways
 
-  package = a group of definitions under the same name
+    package = a group of definitions under the same name
 
-  To use a definition
-  - be in the same package
-  - or import the package
+    To use a definition
+    - be in the same package
+    - or import the package
 
-  Best practice - mirror the file structure
+    Best practice - mirror the file structure
 
-  // Person.scala
-  package org.rtjvm.oop
-  class Person
-  object Person
+    // Person.scala
+    package org.rtjvm.oop
+    class Person
+    object Person
 
-  Fully qualified name
+    Fully qualified name
 
-  package objects hold standalone methods/constants
-  - one per package
+    package objects hold standalone methods/constants
+    - one per package
 
-  Name aliasing at imports
-  import java.sql.{ Date => SqlDate }
-  import java.util.{ Date => JavaDate }
-  import java.{ util => ju }
+    Name aliasing at imports
+    import java.sql.{ Date => SqlDate }
+    import java.util.{ Date => JavaDate }
+    import java.{ util => ju }
 */

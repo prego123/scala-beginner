@@ -25,6 +25,7 @@ object Inheritance extends App{
   class Person(name: String, age: Int) {
     def this(name: String) = this(name, 0)
   }
+
   class Adult(name: String, age: Int, idCard: String) extends Person(name, age)
   // class Adult(name: String, age: Int, idCard: String) extends Person(name) --- calls auxiliary constructor
   // JVM rule - needs to call a constructor of person before you call constructor of adult

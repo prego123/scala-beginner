@@ -33,15 +33,13 @@ class Person(name: String, val age: Int = 0) {
 
   // overloading
   def greet(): Unit = println(s"Hi, I am $name")
-  //  def greet(): Int = 47 ------ not subject to overloading
+  // def greet(): Int = 47 ------ not subject to overloading
 
   // multiple constructors
   def this(name: String) = this(name, 0)
   def this() = this("John")
 }
-
-//class parameters are not fields
-
+// class parameters are not fields
 
 /*
   Novel and writer
@@ -49,7 +47,7 @@ class Person(name: String, val age: Int = 0) {
   write: first name, surname, year
     - method - full name
 
-   novel: name, year of release, author
+  novel: name, year of release, author
     - method - authorAge
              - isWrittenBy(author)
              - copy (new year of release) = new instance of Novel
@@ -64,15 +62,15 @@ class Novel(name: String, year: Int, author: Writer) {
 
   def isWrittenBy(author: Writer): Boolean = author == this.author
 
-  def copy(newYear: Int):  Novel = new Novel(name, year, author)
+  def copy(newYear: Int): Novel = new Novel(name, year, author)
 }
 
 /*
-Counter class
-  - receives an int value
-  - method current count
-  - method to increment/decrement => new Counter
-  - overload inc/dec to receive an amount
+  Counter class
+    - receives an int value
+    - method current count
+    - method to increment/decrement => new Counter
+    - overload inc/dec to receive an amount
 */
 
 class Counter(val count: Int = 0) {

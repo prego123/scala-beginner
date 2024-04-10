@@ -34,19 +34,23 @@ object AbstractDataTypes extends App {
   val croc = new Crocodile
   croc.eat(dog)
 
-  // abstract ---- can have both abstract and non abstract types
-  // ex -
-  //  abstract class Animal {
-  //    val creatureType: String = "abcd"
-  //    def eat: Unit = println("123")
-  //  }
-  // 1. do have constructor parameters
-  // 3. is a type of thing
+  /*
+    Takeaways
 
-  // traits ---- can have both abstract and non abstract types
-  // 1. do not have constructor parameters
-  // 2. multiple traits may be inherited by the same class
-  // 3. traits are behaviour
+       abstract ---- can have both abstract and non abstract types
+       ex -
+        abstract class Animal {
+          val creatureType: String = "abcd"
+          def eat: Unit = println("123")
+        }
+       1. do have constructor parameters
+       3. is a type of thing
 
-  // all classes that we use like string like set and all user derived classes will extend any ref
+       traits ---- can have both abstract and non abstract types
+       1. do not have constructor parameters
+       2. multiple traits may be inherited by the same class
+       3. traits are behaviour
+
+       all classes that we use like string like set and all user derived classes will extend any ref
+  */
 }

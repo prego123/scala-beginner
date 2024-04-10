@@ -11,11 +11,15 @@ object AnonymousClasses extends App {
     override def eat: Unit = println("hahahahahahha")
   } // code inside {} - anonymous class
 
-  // compiler takes whatever is inside {} = AnonymousClasses$$anon$1
-  //  class AnonymousClasses$$anon$1 extends Animal {
-  //    override def eat: Unit = println("hahahahahahha")
-  //  }
-  // val funnyAnimal: Animal = new AnonymousClasses$$anon$1
+  /*
+    Above representation
+
+     compiler takes whatever is inside {} = AnonymousClasses$$anon$1
+      class AnonymousClasses$$anon$1 extends Animal {
+        override def eat: Unit = println("hahahahahahha")
+      }
+     val funnyAnimal: Animal = new AnonymousClasses$$anon$1
+  */
 
   println(funnyAnimal.getClass)
 
@@ -31,23 +35,23 @@ object AnonymousClasses extends App {
 }
 
 /*
-Takeaways
+  Takeaways
 
-- we can instantiate types and override fields or methods on the spot
- trait Animal {
-  def eat: Unit
- }
+    - we can instantiate types and override fields or methods on the spot
+     trait Animal {
+      def eat: Unit
+     }
 
- val predator = new Animal {
-    override def eat: Unit = println("RAWR!")
- }
+     val predator = new Animal {
+        override def eat: Unit = println("RAWR!")
+     }
 
- Rules
- - pass in required constructor arguments if needed
- - implement all abstract field/methods
+     Rules
+       - pass in required constructor arguments if needed
+       - implement all abstract field/methods
 
 
-Works for trait and classes (abstract or not)
+    Works for trait and classes (abstract or not)
 */
 
 
